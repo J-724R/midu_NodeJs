@@ -10,17 +10,17 @@ Promise.all([
 
 
 
-console.log('Leyendo el primer archivo');
-const text = await fs.readFile('./archivo.md', 'utf-8')
-console.log('primer texto: ', text);
+// console.log('Leyendo el primer archivo');
+// const text = await fs.readFile('./archivo.md', 'utf-8')
+// console.log('primer texto: ', text);
 
-console.log(" ");
-console.log("--> Hacer cosas mientras se lee el acrhivo...");
-console.log(" ");
+// console.log(" ");
+// console.log("--> Hacer cosas mientras se lee el acrhivo...");
+// console.log(" ");
 
-console.log('Leyendo el segundo archivo');
+// console.log('Leyendo el segundo archivo');
 
-const text2 = await fs.readFile('./archivo2. txt', 'utf-8')
-console.log('segundo archivo: ', text2);
+// const text2 = await fs.readFile('./archivo2. txt', 'utf-8')
+// console.log('segundo archivo: ', text2);
 
 
