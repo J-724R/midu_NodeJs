@@ -2,7 +2,7 @@ const express = require('express')
 const ditto = require('./pokemon/ditto.json')
 const path = require('path')
 
-const PORT = process.env.PORT ?? 1234
+const PORT = process.env.PORT ?? 1108
 
 const app = express()
 app.disable('x-powered-by')
@@ -11,6 +11,11 @@ app.use(express.json())
 
 app.get('/pokemon/ditto', (req, res) => {
     res.json(ditto)
+})
+
+app.get('/image', (req, res) => {
+    const img = path.join(__dirname, './Rinne_Sharingan_Purple.png')
+    res.sendFile(img)
 })
 
 app.post('/pokemon', (req, res) => {

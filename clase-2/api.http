@@ -1,8 +1,11 @@
 ### Recuperar información del pokemon ditto
-GET http://localhost:1234/pokemon/ditto
+GET http://localhost:1108/pokemon/ditto
+
+### Serve image
+GET http://localhost:1108/image
 
 ### Para crear un Pokemon
-POST http://localhost:1234/pokemon
+POST http://localhost:1108/pokemon
 Content-Type: application/json
 
 {
